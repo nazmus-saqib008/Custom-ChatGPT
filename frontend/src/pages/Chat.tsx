@@ -153,7 +153,7 @@ const Chat=()=>{
                     overflowY: "auto",
                     scrollBehavior: "smooth",
                 }}>
-                    {chatMessages.map((chat,index)=>(
+                    {chatMessages.length>0 && chatMessages.map((chat,index)=>(
                         //@ts-ignore
                         <ChatItem content={chat.content} role={chat.role} key={index}/>
                     ))}
